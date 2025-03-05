@@ -14,15 +14,14 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("/api/courses")
 @AllArgsConstructor
-public class CourcesController {
-    
+public class CourseController {
+
     private final CourseRepository courseRepository;
 
-    //@RequestMapping(method = RequestMethod.GET)
+    // @RequestMapping(method = RequestMethod.GET)
     @GetMapping
-    public List<Course> list(){
+    public List<Course> list() {
         return courseRepository.findAll();
     }
-
 
 }

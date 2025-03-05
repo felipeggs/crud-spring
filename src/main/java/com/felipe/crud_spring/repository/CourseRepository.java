@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.felipe.crud_spring.model.Course;
 
 @Repository
-public interface CourseRepository extends JpaRepository< Course, Long>{//Declarar entidade e seu tipo
-
+public interface CourseRepository extends JpaRepository<Course, Long> {// Declarar entidade e seu tipo
 
 }
